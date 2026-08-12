@@ -50,16 +50,16 @@ aws-smart-alert-enrichment/
 
 ### 1. Log Ingestion & Aggregation
 ![CloudWatch Logs](screenshots/02-cloudwatch-log-group.png)
-*Docker `awslogs` driver streaming application crash logs directly to CloudWatch Log Group `/aws/app/log-monitoring-demo`.*[cite: 1, 3]
+*Docker `awslogs` driver streaming application crash logs directly to CloudWatch Log Group `/aws/app/log-monitoring-demo`.*
 
 ### 2. Alarm State Transition
 ![CloudWatch Alarm State](screenshots/03-alarm-in-alarm-state.png)
-*CloudWatch Metric Filter detecting error threshold breach and transitioning `App-Critical-Error-Alarm` to `IN ALARM`.*[cite: 1, 3]
+*CloudWatch Metric Filter detecting error threshold breach and transitioning `App-Critical-Error-Alarm` to `IN ALARM`.*
 
 ### 3. Lambda Enrichment Engine
 ![Lambda Logs](screenshots/04-lambda-execution.png)
-*Lambda function executing CloudWatch Logs Insights query to extract recent stack traces.*[cite: 1, 3]
+*Lambda function executing CloudWatch Logs Insights query to extract recent stack traces.*
 
 ### 4. Enriched Incident Notification
 ![Enriched Email Notification](screenshots/05-enriched-email-received.png)
-*Detailed production incident notification delivered to email inbox via SNS with full error stack trace context.*[cite: 1, 3]
+*Detailed production incident notification delivered to email inbox via SNS with full error stack trace context.*
